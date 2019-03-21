@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.bg{
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center/100%  100%;
+	overflow: hidden;
+	position: relative;
+}
+#bg{
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center/100%  100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.start-bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg)no-repeat center center/100%  100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 10;
+	transition: all 0.5s;
+}
+.title{
+	position: absolute;
+	width: 600px;
+	height: 350px;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+}
+.title img{
+	width: 600px;
+	height:280px;
+}
+.start{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-40px);
+	top: 65%;
+	width: 80px;
+	height: 80px;
+	z-index: 11;
+}
+@keyframes min{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.15);
+	}
+}
+.start img{
+	width: 80px;
+	height: 80px;
+	animation: min 0.5s linear alternate infinite;
+}
+.girl{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+}
+.girl img{
+	width: 100%;
+	height: 100%;
+}
+#bool{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 200px;
+	height: 40px;
+}
+#count{
+	position: fixed;
+	top: 20px;
+	left: 250px;
+	width: 200px;
+	height: 40px;
+}
+#bool img{
+	width: 200px;
+	height: 40px;
+	
+}
+#bool .boolnum{
+	background: #fff;
+	width: 135px;
+	height: 22px;
+	position: absolute;
+	top: 10px;
+	left: 57px;
+	text-align: center;
+	line-height: 20px;
+	z-index: -1;
+}
+#bool .boolnum .active{
+	background: red;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+#count img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 200px;
+	height: 40px;
+}
+#count .num{
+	background: #fff;
+	width: 130px;
+	height: 22px;
+	position: absolute;
+	top: 15px;
+	left: 65px;
+	text-align: center;
+	line-height: 20px;
+}
+/* 游戏失败界面 */
+.stop{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 600px;
+	height: 450px;
+	margin: auto;
+	top: -600px;
+	transition: all 0.5s; 
+}
+.stop img{
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+#shuaxin{
+	width: 100px;
+	height: 100px;
+	margin-left: 250px; 
+	position: absolute;
+	top: 350px;
+	animation: min 0.5s linear alternate infinite;
+}
